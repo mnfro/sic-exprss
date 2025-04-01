@@ -16,7 +16,7 @@ def check_text_in_page(url, text_to_find):
         response = requests.get(url, timeout=10)
         response.raise_for_status()
         if text_to_find in response.text:
-            #sendMessageToBot("WEBSITE STILL UNDER MAINTENANCE")
+            sendMessageToBot("TEST")
             return True
         else:
             sendMessageToBot("TRAIN TICKET RELEASEE")
